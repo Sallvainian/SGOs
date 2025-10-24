@@ -7,14 +7,9 @@
     "packages/*"
   ],
   "scripts": {
-    "dev": "pnpm --filter \"*\" dev",
-    "build": "pnpm --filter \"*\" build",
-    "test": "pnpm --filter \"*\" test",
-    "lint": "pnpm --filter \"*\" lint"
-  },
-  "engines": {
-    "node": ">=18.0.0",
-    "pnpm": ">=8.0.0"
-  },
-  "packageManager": "pnpm@8.15.0"
+    "dev": "bun run --filter '*' dev",
+    "build": "bun run --filter '*' build",
+    "test": "bun test",
+    "lint": "bun run --filter '*' lint"
+  }
 }

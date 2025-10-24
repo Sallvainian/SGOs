@@ -4,47 +4,45 @@ A mono repository for SGOs (Smart Goal Objectives).
 
 ## Structure
 
-This is a pnpm-based mono repository with the following structure:
+This is a Bun-based mono repository with the following structure:
 
 ```
 SGOs/
 ├── packages/          # Individual packages/projects
 │   └── pre-sgo/      # Pre-SGO package
-├── package.json      # Root package.json with workspaces
-└── pnpm-workspace.yaml
+└── package.json      # Root package.json with workspaces
 ```
 
 ## Getting Started
 
 ### Prerequisites
 
-- Node.js >= 18.0.0
-- pnpm >= 8.0.0
+- Bun >= 1.0.0
 
 ### Installation
 
 ```bash
-# Install pnpm if you haven't already
-npm install -g pnpm
+# Install Bun if you haven't already
+curl -fsSL https://bun.sh/install | bash
 
 # Install dependencies
-pnpm install
+bun install
 ```
 
 ### Development
 
 ```bash
 # Run dev mode for all packages
-pnpm dev
+bun dev
 
 # Build all packages
-pnpm build
+bun build
 
 # Run tests
-pnpm test
+bun test
 
 # Lint all packages
-pnpm lint
+bun lint
 ```
 
 ## Packages
